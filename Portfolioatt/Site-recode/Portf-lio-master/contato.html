@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="jquery.elevatezoom.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <section class="contat">
+        <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    Maicon Carvalho
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html">Serviços</a></li>
+                        <li><a href="index.html">Projetos</a></li>
+                        <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+       
+                <div class="contact-section">
+                    <h1>Contato</h1>
+            
+                <div class="border"></div> 
+                
+                    <form class="contact-form" method="POST" action="envia.php">
+                
+                    <input type="text" class="contact-form-text" name="nome" maxlength="50" placeholder="Nome" autofocus/>
+                
+                    <input type="email" class="contact-form-text" name="email" maxlength="50" placeholder="E-mail"/>
+                
+                    <textarea class="contact-form-text" name="mensagem" maxlength="500" placeholder="Digite sua mensagem."></textarea>
+                
+                    <input type="submit" value="Enviar" class="contact-form-btn">
+                    </form>
+                </div>
+               
+            
+        </section> 
+        
+        
+       
+        
+    <section class="footer">
+            <div class="contato-principal">
+                    <h1>Contato</h1>
+                    
+                </div>
+                
+                <div class="inicio">
+            
+                
+        
+                
+                        <!--Config linkedin-->
+                        <a class="linkedin-geral" href="https://www.linkedin.com/in/maicon-carvalho-5976a994/" target="_blank">
+                            <img class="imagem-linkedin" src="https://s3.amazonaws.com/htmlsig-assets/round/linkedin.png"
+                                alt="LinkedIn" data-filename="linkedin.png" /><a>
+   
+                                   
+                                  
+
+                             <!--Config instagram-->
+                             <a class="instagram-geral" href="https://htmlsig.com/t/000001EJFW6S" target="_blank">
+                                 <img class="imagem-instagram" src="https://s3.amazonaws.com/htmlsig-assets/round/instagram.png"
+                                     alt="Instagram" data-filename="instagram.png" /></a>
+                                    
+                 
+              <!--Config github-->
+                             <a class="github-geral" href="https://htmlsig.com/t/000001EMPP7C" target="_blank">
+                                 <img class="imagem-github" src="https://s3.amazonaws.com/htmlsig-assets/round/github.png"
+                                     alt="Github" data-filename="github.png" /></a>
+                 
+             <!--Config whatsapp-->
+                             <a class="whatsapp-geral" href="https://api.whatsapp.com/send?phone=5521965345158&text=Estarei%20respondendo%20em%2024horas%2C%20agrade%C3%A7o%20pela%20prefer%C3%AAncia!" target="_blank">
+                                 <img class="imagem-whatsapp" src="https://s3.amazonaws.com/htmlsig-assets/round/whatsapp.png"
+                                     alt="Whatsapp" data-filename="whatsapp.png"><a>
+                                            
+                 
+           <!-- Config telegram-->
+                <a class="telegram-geral" href="https://htmlsig.com/t/000001EKXWMY" target="_blank"><img
+                class="imagem-telegram"
+                src="https://s3.amazonaws.com/htmlsig-assets/round/telegram.png" alt="Telegram"
+                data-filename="telegram.png" /><br></a></div></div>
+         
+                </div>
+                <div>
+                <a class="email" href="mailto:MaiconSCarvalho@outlook.com">
+                    <p>MaiconSCarvalho@outlook.com | <a href=”tel:+55021965345158″ class="tel1">(21) 9653-45158</a> |   Rio De Janeiro - Duque De Caxias</p>
+                </a> 
+                
+                
+             </div>
+        </section>
+
+
+        <section id="copy">
+            <h3> <p>Copyright © 2019 Maicon Carvalho Fullstack</p> </h3>
+        </section>
+    
+
+        <!--Script de click, quando menu diminuir!-->
+
+
+
+        <script type="text/javascript">
+            // Menu-toggle button
+
+            $(document).ready(function () {
+                  $(".menu-icon").on("click", function () {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+      </script>
+            
+      <script type="text/javascript">
+      $('.testimonial-pics img').click(function () {
+            $(".testimonial-pics img").removeClass("active");
+            $(this).addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#" + $(this).attr("alt")).addClass("active");
+      });
+    </script>
+</body>
+</html>

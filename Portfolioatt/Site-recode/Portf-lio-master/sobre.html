@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Maicon Carvalho</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../Portf-lio-master/progressbar2/estyle.css">
+    <script src="jquery.easypiechart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    
+<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+                        <!--Menu-toggle button-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+            <div class="logo">
+                Maicon Carvalho
+
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Serviços</a></li>
+                    <li><a href="index.html">Projetos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <aside class="esquerdo">
+        .
+    </aside>
+    <aside class="direito">
+        .
+    </aside>
+
+    <main class="center">
+        <div class="sobre-principal">
+            <h1>Sobre</h1>
+        </div>
+
+        <div class="sobre"></div>
+        <img class="foto-minha" src="../Maicon.jpg">
+
+        <div id="container2">
+            Me chamo Maicon Carvalho, Carioca, Desenvolvedor Web, com experiência no <strong> desenvolvimento de
+                sites,portais e blogs</strong> utilizando as <strong>
+                linguagens,tecnologias e ferramentas</strong> mais eficientes do mercado,prezando sempre pelo
+            compromisso com o cliente final e a pontualidade na entrega
+
+        </div>
+       
+
+
+        <div class="main">
+                
+            <section id="circleBar">
+                    <div class="sobre-principal">
+                            <h1>Competências</h1>
+                        </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">		
+                      <div class="round"
+                        data-value="0.87"
+                        data-size="150"
+                        data-thickness="6">
+                        <strong></strong>
+                        <span><i class="fa fa-html5" aria-hidden="true"></i> HTML 5</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">		
+                      <div class="round"
+                        data-value="0.74"
+                        data-size="150"
+                        data-thickness="6">
+                        <strong></strong>
+                        <span><i class="fa fa-css3" aria-hidden="true"></i> CSS 3</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">		
+                      <div class="round"
+                        data-value="0.65"
+                        data-size="150"
+                        data-thickness="6">
+                        <strong></strong>
+                        <span><i class="fa fa-jsfiddle" aria-hidden="true"></i> JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">		
+                      <div class="round"data-value="0.95"data-size="150"data-thickness="6"><strong></strong>
+                        
+                        <span><i class="fa fa-laptop" aria-hidden="true"></i> Bootstrap Skill</span></div>
+                    </div>
+                    <div class="col-md-3">		
+                            <div class="round"data-value="0.95"data-size="150"data-thickness="6"><strong></strong>
+                              
+                              <span><i class="fa fa-laptop" aria-hidden="true"></i> PHP</span></div>
+                          </div>
+                          <div class="col-md-3">		
+                                <div class="round"data-value="0.95"data-size="150"data-thickness="6"><strong></strong>
+                                  
+                                  <span><i class="fa fa-laptop" aria-hidden="true"></i> </span></div>
+                              </div>
+                              <div class="col-md-3">		
+                                    <div class="round"data-value="0.95"data-size="150"data-thickness="6"><strong></strong>
+                                      
+                                      <span><i class="fa fa-laptop" aria-hidden="true"></i> </span></div>
+                                  </div>
+                    
+                  </div>	
+                </div>
+                
+              </section>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
+              <script  src="function.js"></script>
+              
+              <script>
+              
+              function Circlle(el){
+                $(el).circleProgress({fill: {color: 'blue'}})
+                  .on('circle-animation-progress', function(event, progress, stepValue){
+                      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)+'%');
+                      });  
+              };
+              Circlle('.round');
+              </script>
+
+
+        </div>
+
+                
+    </main>
+    <section class="footer">
+    <div class="contato-principal">
+            <h1>Contato</h1>
+            
+        </div>
+        
+        <div class="inicio">
+    
+        
+
+        
+                <!--Config linkedin-->
+                <a class="linkedin-geral" href="https://www.linkedin.com/in/maicon-carvalho-5976a994/" target="_blank">
+                    <img class="imagem-linkedin" src="https://s3.amazonaws.com/htmlsig-assets/round/linkedin.png"
+                        alt="LinkedIn" data-filename="linkedin.png" /><a>
+
+                           
+                          
+
+                     <!--Config instagram-->
+                     <a class="instagram-geral" href="https://htmlsig.com/t/000001EJFW6S" target="_blank">
+                         <img class="imagem-instagram" src="https://s3.amazonaws.com/htmlsig-assets/round/instagram.png"
+                             alt="Instagram" data-filename="instagram.png" /></a>
+                            
+         
+      <!--Config github-->
+                     <a class="github-geral" href="https://htmlsig.com/t/000001EMPP7C" target="_blank">
+                         <img class="imagem-github" src="https://s3.amazonaws.com/htmlsig-assets/round/github.png"
+                             alt="Github" data-filename="github.png" /></a>
+         
+     <!--Config whatsapp-->
+                     <a class="whatsapp-geral" href="https://api.whatsapp.com/send?phone=5521965345158&text=Estarei%20respondendo%20em%2024horas%2C%20agrade%C3%A7o%20pela%20prefer%C3%AAncia!" target="_blank">
+                         <img class="imagem-whatsapp" src="https://s3.amazonaws.com/htmlsig-assets/round/whatsapp.png"
+                             alt="Whatsapp" data-filename="whatsapp.png"><a>
+                                    
+         
+   <!-- Config telegram-->
+        <a class="telegram-geral" href="https://htmlsig.com/t/000001EKXWMY" target="_blank"><img
+        class="imagem-telegram"
+        src="https://s3.amazonaws.com/htmlsig-assets/round/telegram.png" alt="Telegram"
+        data-filename="telegram.png" /><br></a></div></div>
+ 
+        </div>
+        <div>
+        <a class="email" href="mailto:MaiconSCarvalho@outlook.com">
+            <p>MaiconSCarvalho@outlook.com | <a href=”tel:+55021965345158″ class="tel1">(21) 9653-45158</a> |   Rio De Janeiro - Duque De Caxias</p>
+        </a> 
+        
+        
+     </div>
+</section>
+
+
+<section id="copy">
+    <h3> <p>Copyright © 2019 Maicon Carvalho Fullstack</p> </h3>
+</section>
+
+</body>
+</html>
